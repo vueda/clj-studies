@@ -101,3 +101,22 @@
 
 ;---------------------------------------------------------------------------------------
 
+; https://www.hackerrank.com/challenges/string-mingling/problem
+
+(defn mingle [a b]
+  (apply str (mapcat list a b)))
+
+(println (mingle (read-line) (read-line)))
+
+;---------------------------------------------------------------------------------------
+
+; https://www.hackerrank.com/challenges/string-o-permute/problem
+
+(defn permute [txt]
+  (let [fst (take-nth 2 txt)
+        scd (take-nth 2 (rest txt))]
+    (apply str (mapcat vector scd fst))))
+
+(let [n (Integer/parseInt (read-line))]
+  (dotimes [x n]
+    (println (permute (read-line)))))

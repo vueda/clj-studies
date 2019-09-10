@@ -12,7 +12,7 @@ This is just a lot of notes and code based on courses, challenges and books that
     
 - My solutions to URI Online Judge challenges - No support for Clojure there :(
 
-##Other...
+## Other...
 
 *Clojure Koans*
 
