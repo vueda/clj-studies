@@ -1,6 +1,5 @@
 (ns clj-studies.core
-  (:gen-class)
-  (:require [clj-studies.hacker_rank.clj-exercises :as rr]))
+  (:gen-class))
 
 (defn -main
   "I don't do a whole lot ... yet."
