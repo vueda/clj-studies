@@ -8,17 +8,17 @@
 ;The book solution is simpler than that.
 ;Try your own solution too!
 
-(defn divisible-by [divisor dividend]
+(defn divisible-by? [divisor dividend]
   (zero? (mod dividend divisor)))
 
-(def divisible-by-three (partial divisible-by 3))
-(def divisible-by-five (partial divisible-by 5))
+(def divisible-by-three? (partial divisible-by? 3))
+(def divisible-by-five? (partial divisible-by? 5))
 
-(def divisible-by-three-and-five
-  (every-pred divisible-by-three divisible-by-five))
+(def divisible-by-three-and-five?
+  (every-pred divisible-by-three? divisible-by-five?))
 
 (defn fizz-buzz [num]
-  (cond (divisible-by-three-and-five num) "fizzbuzz"
-        (divisible-by-three num) "fizz"
-        (divisible-by-five num) "buzz"
+  (cond (divisible-by-three-and-five? num) "fizzbuzz"
+        (divisible-by-three? num) "fizz"
+        (divisible-by-fivew num) "buzz"
         :else num))
