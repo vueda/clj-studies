@@ -4,7 +4,19 @@ This is just a lot of notes and code based on courses, challenges and books that
 
 ## References
 
-*clj_hacker_rank*
+*alura_intro*
+
+- Content from Alura online course https://cursos.alura.com.br/course/clojure-introducao-a-programacao-funcional
+
+*alura_collections*
+
+ - Content from Alura online course https://cursos.alura.com.br/course/clojure-colecoes-no-dia-a-dia
+
+*book_fn_prog_intro_clojure*
+
+- Content and samples from book https://www.casadocodigo.com.br/products/livro-programacao-funcional-clojure
+
+*hacker_rank*
     
 - My solutions to Hacker Rank challenges
 
