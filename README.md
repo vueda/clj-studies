@@ -12,6 +12,10 @@ This is just a lot of notes and code based on courses, challenges and books that
 
  - Content from Alura online course https://cursos.alura.com.br/course/clojure-colecoes-no-dia-a-dia
 
+*alura_mutability_atoms_refs*
+
+ - Content from Alura online course https://cursos.alura.com.br/course/clojure-mutabilidade-com-atoms-e-refs
+ 
 *book_fn_prog_intro_clojure*
 
 - Content and samples from book https://www.casadocodigo.com.br/products/livro-programacao-funcional-clojure
