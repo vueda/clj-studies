@@ -3,7 +3,7 @@
 
 (defn create-hospital []
   {:line       PersistentQueue/EMPTY
-   :lab-1-line (conj PersistentQueue/EMPTY 1)
+   :lab-1-line (conj PersistentQueue/EMPTY 1 2 3 4 5)
    :lab-2-line PersistentQueue/EMPTY
    :lab-3-line PersistentQueue/EMPTY}
   )

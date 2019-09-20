@@ -42,11 +42,21 @@
 (test-set)
 (test-queue)
 
+;This def is a problem since it represents a global state
+;Multiple threads using it can cause concurrency problems
 (def hospital (hm/create-hospital))
 (defn hospital-day []
   (println "Hospital opened")
   (pprint hospital)
   (pprint (hl/new-arrival hospital :line 2))
-  (pprint (hl/attend-patient hospital :lab-1-line)))
+  (pprint (hl/attend-patient hospital :lab-1-line))
+  (pprint (hl/new-arrival hospital :lab-1-line 6)))
 
-(hospital-day)
+;(hospital-day)
+
+;Java interop. Thread run
+(defn execute-in-thread []
+  (.start (Thread. #(do (Thread/sleep (rand)) (println "Hi"))))
+  (.start (Thread. #(do (Thread/sleep (rand)) (println "Hi")))))
+
+(execute-in-thread)
