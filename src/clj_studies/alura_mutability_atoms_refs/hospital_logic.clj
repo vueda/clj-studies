@@ -12,3 +12,9 @@
 
 (defn attend-patient [hospital queue]
   (update hospital queue pop))
+
+(defn transfer-patient [hospital from to]
+  (let [patient (peek (get hospital from))]
+    (-> hospital
+        (attend-patient from)
+        (new-arrival to patient))))
